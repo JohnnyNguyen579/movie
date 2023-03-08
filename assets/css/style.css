@@ -260,6 +260,26 @@ header {
     cursor: auto;
 }
 
+.header-menu__proFile{
+    background-color: #fff;
+    position: absolute;
+    top: 65px;
+    right: 8px;
+    z-index: 1;
+    width: 126px;
+    padding: 16px;
+    display: none;
+}
+
+.header-proFile__link{
+    display: block;
+    color: #000;
+    text-decoration: none;
+    padding: 6px 0;
+    font-weight: 400;
+}
+
+
 .container-slider{
     position: relative;
     width: 100%;
@@ -339,6 +359,7 @@ h1{
     border-left: 6px solid var(--red-color);
     padding-left: 20px;
     letter-spacing: 4px;
+    pointer-events: none;
 }
 
 .slider-content__type,
@@ -349,7 +370,29 @@ h1{
     margin: 20px 0;
     opacity: 0;
     animation: showContent 1s ease-in-out 1 .4s forwards;
-    
+    transition-duration: .5s;
+}
+
+.slider-content__type:hover,
+.slider-content__time:hover{
+    color: var(--red-color);
+    backdrop-filter: blur(10px);
+}
+
+.slider-content__type{
+    margin-right: 30px;
+    position: relative;
+}
+
+.slider-content__type::after{
+    position: absolute;
+    content: "";
+    display: block;
+    border-right: 2px solid #ddd;
+    top: 53%;
+    transform: translateY(-50%);
+    right: -15px;
+    height: 30px;
 }
 
 .slider-content__link{

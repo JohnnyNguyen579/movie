@@ -92,24 +92,29 @@
                                 </ul>
                             </div>
                         </li>
-                        <li class="header-right__item"><img src="./assets/css/img/avt.jpg" alt=""
-                                class="header-right__avtImg"></li>
+                        <li class="header-right__item" id="avt"><img src="./assets/css/img/avt.jpg" alt="" class="header-right__avtImg">
+                                <div class="header-menu__proFile" id="menu-avt">
+                                    <a href="#" class="header-proFile__link">My Profile</a>
+                                    <a href="#" class="header-proFile__link">My Account</a>
+                                    <a href="#" class="header-proFile__link">Sign Out</a>
+                                </div>
+                            </li>
                         <li class="header-right__item"><a href="#" class="header-right__btn">Subscribe Now</a></li>
                     </ul>
                 </div>
             </header>
         </div>
 
-        <div class="container-slider">
+        <div class="container-slider" style="background-image: linear-gradient(red, red);">
             <div id="slider">
                 <div class="slider-item" style="background-image: url(./assets/css/img/movie-img/doctor-strange-2.jpg); background-position: top;">
                     <div class="slider-item__content">
                         <div class="slider-item__heading" style="overflow: hidden;">
                             <h1>
-                            The Avengers
+                            Doctor Strange 2
                             </h1>
                         </div>
-                        <p class="slider-content__type">Science fiction</p><p class="slider-content__time">1hr 22minutes</p>
+                        <p class="slider-content__type">Science fiction</p><p class="slider-content__time">2hr 6minutes</p>
                         <a href="#" class="slider-content__link">Watch Now</a>
                     </div>
                 </div>
@@ -117,10 +122,10 @@
                     <div class="slider-item__content">
                         <div class="slider-item__heading" style="overflow: hidden;">
                             <h1>
-                            The Avengers
+                            Avengers: Endgame
                             </h1>
                         </div>
-                        <p class="slider-content__type">Science fiction</p><p class="slider-content__time">1hr 22minutes</p>
+                        <p class="slider-content__type">Science fiction</p><p class="slider-content__time">3hr 2minutes</p>
                         <a href="#" class="slider-content__link">Watch Now</a>
                     </div>
                 </div>
@@ -128,21 +133,21 @@
                     <div class="slider-item__content">
                         <div class="slider-item__heading" style="overflow: hidden;">
                             <h1>
-                            The Avengers
+                            Spider-Man
                             </h1>
                         </div>
-                        <p class="slider-content__type">Science fiction</p><p class="slider-content__time">1hr 22minutes</p>
+                        <p class="slider-content__type">Science fiction</p><p class="slider-content__time">2hr 20minutes</p>
                         <a href="#" class="slider-content__link">Watch Now</a>
                     </div>
                 </div>
-                <div class="slider-item" style="background-image: url(./assets/css/img/movie-img/thor-love-and-thunder.jpg); background-position: 66%, 50%">
+                <div class="slider-item" style="background-image: url(./assets/css/img/movie-img/thor-love-and-thunder.jpg); background-position: bottom;">
                     <div class="slider-item__content">
                         <div class="slider-item__heading" style="overflow: hidden;">
                             <h1>
-                            The Avengers
+                            Thor: Love and Thunder
                             </h1>
                         </div>
-                        <p class="slider-content__type">Science fiction</p><p class="slider-content__time">1hr 22minutes</p>
+                        <p class="slider-content__type">Science fiction</p><p class="slider-content__time">1hr 58minutes</p>
                         <a href="#" class="slider-content__link">Watch Now</a>
                     </div>
                 </div>
@@ -205,6 +210,26 @@
             event.stopPropagation()
         })
     </script>
+    <!-- <script>
+        var avtBtn = document.getElementById('avt');
+        var menuAvt = document.getElementById('menu-avt');
+
+        avtBtn.addEventListener("click", function () {
+            if (content.style.display === "none") {
+                content.style.display = "block";
+            } else {
+                content.style.display = "none";
+            }
+        });
+        document.addEventListener("click", function (event) {
+            if (event.target !== avtBtn && event.target !== menuAvt) {
+                content.style.display = "none";
+            }
+        });
+        menuAvt.addEventListener('click', function () {
+            event.stopPropagation()
+        })
+    </script> -->
     <script>
         document.getElementById('next').onclick = function(){
             let lists = document.querySelectorAll('.slider-item');
