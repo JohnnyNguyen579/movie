@@ -1,0 +1,37 @@
+:root{
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #c9d1d9;;
+    --red-color: #e50914;
+    --blue-color: #0259ae;
+    --gradient-1: linear-gradient(rgb(112, 125, 219),
+    rgb(154, 184, 224),
+    rgb(246, 198, 168),
+    rgb(239, 166, 206),
+    rgb(189, 139, 229));
+    --gradient-2: linear-gradient(to top, #12b4f2 0%, #0259ae 51%, #12b4f2 100%);
+    --transition-3s: all ease .3s;
+    --transition-5s: all ease .5s;
+    --transition-8s: all ease .8s;
+    --background-color-1: #0d1018;
+}
+
+*{
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.grid{
+    width: 1900px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.gird__full-width{
+    width: 100%;
+}
