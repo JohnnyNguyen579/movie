@@ -92,73 +92,88 @@
                                 </ul>
                             </div>
                         </li>
-                        <li class="header-right__item" id="avt"><img src="./assets/css/img/avt.jpg" alt="" class="header-right__avtImg">
-                                <div class="header-menu__proFile" id="menu-avt">
-                                    <a href="#" class="header-proFile__link">My Profile</a>
-                                    <a href="#" class="header-proFile__link">My Account</a>
-                                    <a href="#" class="header-proFile__link">Sign Out</a>
-                                </div>
-                            </li>
+                        <li class="header-right__item">
+                            <img src="./assets/css/img/avt.jpg" alt="" class="header-right__avtImg"  id="avt">
+                            <div class="header-menu__proFile" id="menu-avt">
+                                <a href="#" class="header-proFile__link">My Profile</a>
+                                <a href="#" class="header-proFile__link">My Account</a>
+                                <a href="#" class="header-proFile__link">Sign Out</a>
+                            </div>
+                        </li>
                         <li class="header-right__item"><a href="#" class="header-right__btn">Subscribe Now</a></li>
                     </ul>
                 </div>
             </header>
         </div>
 
-        <div class="container-slider" style="background-image: linear-gradient(red, red);">
+        <div class="container-slider" style="background-color: #000;">
             <div id="slider">
-                <div class="slider-item" style="background-image: url(./assets/css/img/movie-img/doctor-strange-2.jpg); background-position: top;">
+                <div class="slider-item"
+                    style="background-image: url(./assets/css/img/movie-img/doctor-strange-2.jpg); background-position: top;">
+                    <div class="slider-overlay"></div>
                     <div class="slider-item__content">
                         <div class="slider-item__heading" style="overflow: hidden;">
                             <h1>
-                            Doctor Strange 2
+                                Doctor Strange 2
                             </h1>
                         </div>
-                        <p class="slider-content__type">Science fiction</p><p class="slider-content__time">2hr 6minutes</p>
+                        <p class="slider-content__type">Science fiction</p>
+                        <p class="slider-content__time">2hr 6minutes</p>
                         <a href="#" class="slider-content__link">Watch Now</a>
                     </div>
                 </div>
                 <div class="slider-item" style="background-image: url(./assets/css/img/movie-img/avengers-3.jpg)">
+                    <div class="slider-overlay"></div>
                     <div class="slider-item__content">
                         <div class="slider-item__heading" style="overflow: hidden;">
                             <h1>
-                            Avengers: Endgame
+                                Avengers: Endgame
                             </h1>
                         </div>
-                        <p class="slider-content__type">Science fiction</p><p class="slider-content__time">3hr 2minutes</p>
+                        <p class="slider-content__type">Science fiction</p>
+                        <p class="slider-content__time">3hr 2minutes</p>
                         <a href="#" class="slider-content__link">Watch Now</a>
                     </div>
                 </div>
-                <div class="slider-item" style="background-image: url(./assets/css/img/movie-img/spider-nwh.jpg); background-position: 75%, 50%">
+                <div class="slider-item"
+                    style="background-image: url(./assets/css/img/movie-img/spider-nwh.jpg); background-position: 75%, 50%">
+                    <div class="slider-overlay"></div>
                     <div class="slider-item__content">
                         <div class="slider-item__heading" style="overflow: hidden;">
                             <h1>
-                            Spider-Man
+                                Spider-Man
                             </h1>
                         </div>
-                        <p class="slider-content__type">Science fiction</p><p class="slider-content__time">2hr 20minutes</p>
+                        <p class="slider-content__type">Science fiction</p>
+                        <p class="slider-content__time">2hr 20minutes</p>
                         <a href="#" class="slider-content__link">Watch Now</a>
                     </div>
                 </div>
-                <div class="slider-item" style="background-image: url(./assets/css/img/movie-img/thor-love-and-thunder.jpg); background-position: bottom;">
+                <div class="slider-item"
+                    style="background-image: url(./assets/css/img/movie-img/moon-knight.jpg); background-position: center;">
+                    <div class="slider-overlay"></div>
                     <div class="slider-item__content">
                         <div class="slider-item__heading" style="overflow: hidden;">
                             <h1>
-                            Thor: Love and Thunder
+                                Moon-Knight
                             </h1>
                         </div>
-                        <p class="slider-content__type">Science fiction</p><p class="slider-content__time">1hr 58minutes</p>
+                        <p class="slider-content__type">Science fiction</p>
+                        <p class="slider-content__time">6 Episodes</p>
                         <a href="#" class="slider-content__link">Watch Now</a>
                     </div>
                 </div>
-                <div class="slider-item" style="background-image: url(./assets/css/img/movie-img/avengers-4.jpg)">
+                <div class="slider-item"
+                    style="background-image: url(./assets/css/img/movie-img/shang-chi.jpg); background-position: 90% top;">
+                    <div class="slider-overlay"></div>
                     <div class="slider-item__content">
                         <div class="slider-item__heading" style="overflow: hidden;">
                             <h1>
-                            The Avengers
+                                Shang-Chi
                             </h1>
                         </div>
-                        <p class="slider-content__type">Science fiction</p><p class="slider-content__time">1hr 22minutes</p>
+                        <p class="slider-content__type">Science fiction</p>
+                        <p class="slider-content__time">2hr 2minutes</p>
                         <a href="#" class="slider-content__link">Watch Now</a>
                     </div>
                 </div>
@@ -190,6 +205,7 @@
             search.style.display = 'none';
         });
     </script>
+
     <script>
         var button = document.getElementById("notify");
         var content = document.getElementById("menu-notify");
@@ -206,36 +222,37 @@
                 content.style.display = "none";
             }
         });
-        content.addEventListener('click', function () {
-            event.stopPropagation()
-        })
+        content.addEventListener('click', function (event) {
+            event.stopPropagation();
+        });
     </script>
-    <!-- <script>
+    <script>
         var avtBtn = document.getElementById('avt');
         var menuAvt = document.getElementById('menu-avt');
 
         avtBtn.addEventListener("click", function () {
-            if (content.style.display === "none") {
-                content.style.display = "block";
+            if (menuAvt.style.display === "none") {
+                menuAvt.style.display = "block";
             } else {
-                content.style.display = "none";
+                menuAvt.style.display = "none";
             }
         });
         document.addEventListener("click", function (event) {
             if (event.target !== avtBtn && event.target !== menuAvt) {
-                content.style.display = "none";
+                menuAvt.style.display = "none";
             }
         });
-        menuAvt.addEventListener('click', function () {
-            event.stopPropagation()
-        })
-    </script> -->
+        menuAvt.addEventListener('click', function (event) {
+            event.stopPropagation();
+        });
+    </script>
+
     <script>
-        document.getElementById('next').onclick = function(){
+        document.getElementById('next').onclick = function () {
             let lists = document.querySelectorAll('.slider-item');
             document.getElementById('slider').appendChild(lists[0]);
         }
-        document.getElementById('prev').onclick = function(){
+        document.getElementById('prev').onclick = function () {
             let lists = document.querySelectorAll('.slider-item');
             document.getElementById('slider').prepend(lists[lists.length - 1]);
         }

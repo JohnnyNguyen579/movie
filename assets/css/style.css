@@ -31,6 +31,7 @@ header {
     cursor: pointer;
     position: relative;
     padding: 10px;
+    user-select: none;
 }
 
 .header-left__item>a {
@@ -60,6 +61,7 @@ header {
     margin-right: 36px;
     cursor: pointer;
     position: relative;
+    user-select: none;
 }
 
 .header-right__icon {
@@ -82,6 +84,7 @@ header {
 .header-right__avtImg {
     width: 32px;
     border-radius: 50%;
+    user-select: none;
 }
 
 .header-right__btn,
@@ -205,6 +208,7 @@ header {
 
 .notify{
     pointer-events: none;
+    user-select: none;
 }
 
 .menu-notify {
@@ -217,6 +221,7 @@ header {
     cursor: default;
     display: none;
     z-index: 1;
+    user-select: text;
 }
 
 .notify-heading {
@@ -311,6 +316,7 @@ header {
     right: 100px;
     transition: 0.3s;
     border-radius: 20px;
+    overflow: hidden;
 }
 
 .slider-item:nth-child(1),
@@ -346,6 +352,14 @@ header {
 
 .slider-item:nth-child(2) .slider-item__content{
     display: block;
+    user-select: none;
+}
+
+.slider-item:nth-child(2) .slider-overlay{
+    opacity: 1;
+    transform: translateX(0);
+    visibility: visible;
+
 }
 
 h1{
@@ -360,6 +374,7 @@ h1{
     padding-left: 20px;
     letter-spacing: 4px;
     pointer-events: none;
+    z-index: 123;
 }
 
 .slider-content__type,
@@ -464,6 +479,20 @@ h1{
 .card-slider__btn button:hover {
     color: #fff;
     background-color: var(--red-color);
+}
+
+.slider-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(90deg , rgba(0,0,0,0.9) 0%, transparent 50%);
+    pointer-events: none;
+    opacity: 0;
+    transition: all 1.5s ease-in-out;
+    transform: translateX(-150px);
+    visibility: hidden;
 }
 
 
